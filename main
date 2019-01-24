@@ -1,0 +1,15 @@
+import sys
+import FormBlackjack
+from PySide2 import QtCore, QtGui, QtWidgets
+
+def main():
+    app = QtWidgets.QApplication(sys.argv)
+
+    myApp = FormBlackjack.FormBlackjack()
+    myApp.show()
+
+    # Run the main Qt loop
+    sys.exit(app.exec_())
+
+
+main()
